@@ -1,0 +1,9 @@
+*/Gen/*
+*.pro.*
+Makefile*
+Bin/*
+Lib/*
+*.so
+*.dll
+*.lib
+*.a
