@@ -162,14 +162,14 @@ namespace AudioCollection {
 				QRectF RectText;
 				for(qreal XPos = Rect.left();XPos<=Rect.right();XPos+=XLineUnit)
 				{
-					RectText.setRect(XPos - XLineUnit/2,Rect.bottom() + 5,XLineUnit,10);
+                    RectText.setRect(XPos - XLineUnit/2,Rect.bottom() + 3,XLineUnit,13);
 					qreal XHz = MinHz + (((MaxHz - MinHz)/Rect.width())*(XPos - Rect.left()));
 					painter->drawText(RectText,Qt::AlignCenter,QrealToString(XHz,"hz"));
 				}
 				//绘制Y坐标轴
 				for(qreal YPos = Rect.top();YPos<=Rect.bottom();YPos+=YLineUnit)
 				{
-					RectText.setRect(0,YPos - 5,Rect.left(),10);
+                    RectText.setRect(0,YPos - 10,Rect.left(),20);
 					qreal YDB = MaxDB - (((MaxDB - MinDB)/Rect.height())*(YPos - Rect.top()));
 					painter->drawText(RectText,Qt::AlignRight,QrealToString(YDB,"db"));
 				}
@@ -194,8 +194,8 @@ namespace AudioCollection {
 					QLineF YDynamic(BeginYDynamic,EndYDynamic);
 					painter->drawLine(XDynamic);
 					painter->drawLine(YDynamic);
-					QPoint Point(MousePoint.x() + 10,
-								 MousePoint.y() -10);
+                    QPoint Point(MousePoint.x() + 15,
+                                 MousePoint.y() -15);
 					QString DrawPointText("(%1,%2)");
 					DrawPointText = DrawPointText.arg(QrealToString(MouseX,"hz"))
 												 .arg(QrealToString(MouseY,"db"));
