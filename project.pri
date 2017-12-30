@@ -14,12 +14,18 @@ contains(TEMPLATE,app) {
     }
 }
 
+win32 {
+    CONFIG(debug,debug|release) {
+        TARGET = $${TARGET}d
+    }
+}
+
 OBJECTS_DIR = $$OUT_PWD/Gen/Objs
 RCC_DIR = $$OUT_PWD/Gen/Rcc
 UI_DIR = $$OUT_PWD/Gen/Ui
 MOC_DIR = $$OUT_PWD/Gen/Moc
 
-DESTDIR += $$OBJECTS_DIR \
+QMAKE_DISTCLEAN += $$OBJECTS_DIR \
     $$RCC_DIR \
     $$UI_DIR \
     $$MOC_DIR
