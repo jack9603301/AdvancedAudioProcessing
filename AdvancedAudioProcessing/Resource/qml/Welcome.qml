@@ -17,10 +17,4 @@ Item {
 		deviceType: Spectrum.Device
 		updateInterval: 1000
 	}
-
-	Component.onCompleted: {
-
-
-		//spectrum.Start()
-	}
 }
