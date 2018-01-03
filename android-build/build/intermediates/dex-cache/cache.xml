@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\Project\AdvancedAudioProcessing\android-build\libs\QtAndroid-bundled.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="8046f0dcb973f84c4af6cd525b21fdd099efc62b">
+        <dex dex="E:\Project\AdvancedAudioProcessing\android-build\build\intermediates\pre-dexed\debug\QtAndroid-bundled_e0425d0bd367b574afcd0568853301e3469967af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Project\AdvancedAudioProcessing\android-build\libs\QtMultimedia-bundled.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="581fd6f1084c303b45b619b2115a85aad6be4a3e">
+        <dex dex="E:\Project\AdvancedAudioProcessing\android-build\build\intermediates\pre-dexed\debug\QtMultimedia-bundled_50a0473b7dfe5d2b5aca4e427bbe3792c19b2f07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Project\AdvancedAudioProcessing\android-build\libs\QtAndroidBearer-bundled.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="36146c014a3991089f9f2013f412d9ef3e9fe04a">
+        <dex dex="E:\Project\AdvancedAudioProcessing\android-build\build\intermediates\pre-dexed\debug\QtAndroidBearer-bundled_f006132ea44615febfeaba9183d013a0ce267dde.jar" />
+    </item>
+
+</items>
